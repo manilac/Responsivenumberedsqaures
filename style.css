@@ -24,16 +24,16 @@
     text-align: center;
     font-family: sans-serif;
 }
-.colorGrp1 {
+.color1 {
     background-color: #6F98A8;
 }
-.colorGrp2 {
+.color2 {
     background-color: #2B8EAD;
 }
-.colorGrp3 {
+.color3 {
     background-color: #2F454E;
 }
-.colorGrp4 {
+.color4 {
     background-color: #BFBFBF;
 
 }
@@ -44,4 +44,49 @@
     font-size: 14pt;
     text-align: center;
     color:black;
+}
+
+@media (max-width:767px)
+{
+    .container
+    {
+        background-color: white;
+    }
+    .container .mobile_head
+    {
+        background-color: #000000;
+        color:#FFFFFF;
+    }
+    #container .card
+    {
+        border-left: 5px solid;
+        background-color: #efefef;
+        height: 35px;
+        margin-bottom: 7px;
+    }
+    .container .btn
+    {
+        min-width: 100%;
+    }
+    #container .card .value
+    {
+        color: #10000f;
+        font-size: 15px;
+    }
+    #container .color1
+    {
+        border-left-color: #6F98A8;
+    }
+    #container .color2
+    {
+        border-left-color: #2B8EAD;
+    }
+    #container .color3
+    {
+        border-left-color: #2F454E;
+    }
+    #container .color4
+    {
+        border-left-color: #BFBFBF;
+    }
 }

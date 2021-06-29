@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const arra1 = [{text: 1, class: 'colorGrp1'}, {text: 2, class: 'colorGrp2'}, {
-        text: 3,
-        class: 'colorGrp3'
-    }, {text: 4, class: 'colorGrp2'}, {text: 5, class: 'colorGrp3'}, {text: 6, class: 'colorGrp4'}, {
-        text: 7,
-        class: 'colorGrp4'
-    }, {text: 8, class: 'colorGrp1'}, {text: 9, class: 'colorGrp3'}];
+    const arra1 = [{value: 1, class: 'color1'}, {value: 2, class: 'color2'}, {
+        value: 3,
+        class: 'color3'
+    }, {value: 4, class: 'color2'}, {value: 5, class: 'color3'}, {value: 6, class: 'color4'}, {
+        value: 7,
+        class: 'color4'
+    }, {value: 8, class: 'color1'}, {value: 9, class: 'color3'}];
     render(arra1);
     function render(arra) {
         document.getElementById('container').innerHTML = '';
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             card.className = "col-md-4 col-sm-4 col-xs-12 square card " + arra1[i].class;
             value.className = "value";
 
-            value.innerHTML = arra1[i].text;
+            value.innerHTML = arra1[i].value;
             card.appendChild(value);
 
             document.getElementById("container").appendChild(card);
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     sort = () => {
         arra1.sort(function (x, y) {
-            return x.text - y.text;
+            return x.value - y.value;
         });
         render(arra1);
     }
